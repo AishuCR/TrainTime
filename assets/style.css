@@ -1,0 +1,17 @@
+#content{
+    background-image: url(../assets/images/trainbg.jpg);
+}
+#heading{
+    background-color: brown;
+    color:white;
+}
+#table-details{
+    background-color: steelblue;
+    color:white;
+}
+#adding-space{
+    background-color: lightseagreen;
+    color:white;
+    margin-top:20px;
+
+}

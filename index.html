@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>
+        train time
+    </title>
+    <!--css stylesheet-->
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <!--reset stylesheet-->
+    <link rel="stylesheet" type="text/css" href="assets/reset.css">
+    <!--linking bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+        <!--linking js-->
+    <script src="assets/app.js"></script>
+    <!--linking firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <!--linking jquery-->
+    <script type="text/javascript" src='https://code.jquery.com/jquery.js'></script>
+    <!--moment-->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+
+<body id="content">
+    <div class="container">
+        <div class="jumbotron" id="heading">
+            <h1 class="display-4 text-center">Train Timing Display</h1>
+
+        </div>
+    </div>
+    <div class="container" id="table-details">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="text-center">Current Train Schedule</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th>Destination</th>
+                            <th>Frequency (minutes)</th>
+                            <th>Next Arrival</th>
+                            <th>Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+        <div class="container" id="adding-space">
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="text-center">Add Your Train </h4>
+                </div>
+                <form>
+                    <div class="col-12">
+                        <label for="">Train Name:</label>
+                        <input type="text" value="" id="trainNameInput">
+                    </div>
+                    <div class="col-12">
+                        <label for="">Destination:</label>
+                        <input type="text" value="" id="trainDestinationInput">
+                    </div>
+                    <div class="col-12">
+                        <label for="">First Train:</label>
+                        <input type="text" value="" id="firstTrainInput">
+                    </div>
+                    <div class="col-12">
+                        <label for="">Frequency:</label>
+                        <input type="text" value="" id="trainFrequencyInput">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
